@@ -59,8 +59,8 @@ markdown_extensions:
   - pymdownx.keys
   - pymdownx.mark
   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - tables
   - toc:
       permalink: true
@@ -102,7 +102,6 @@ extra_javascript:
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
   - https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js
-  - javascripts/tablesort.js
 
 # If you want to put extra CSS
 extra_css:
@@ -114,18 +113,19 @@ nav:
 - About: 
   - Overview: index.md
   - Contributions: contributions.md
-  - Projects:
-    - Overview: projects/index.md
-    - Determining Clients: projects/clients.md
-    - During: projects/during.md
-    - Handover: projects/handover.md
-  - Workshops:
-    - Overview: workshops/index.md
-    - Existing Workshops: workshops/existing-workshops.md
-    - New Workshops: workshops/new-workshops.md
-  - Tech Stack:
-    - Overview: stack/index.md
-    - Picking a New Stack: stack/new-stack.md
-    - Devcontainers: stack/devcontainers.md
+- Projects:
+  - Overview: projects/index.md
+  - Determining Clients: projects/clients.md
+  - Planning a Project: projects/planning.md
+  - During Projects: projects/during.md
+  - Handover: projects/handover.md
+- Workshops:
+  - Overview: workshops/index.md
+  - Existing Workshops: workshops/existing-workshops.md
+  - New Workshops: workshops/new-workshops.md
+- Tech Stack:
+  - Overview: stack/index.md
+  - Picking a New Stack: stack/new-stack.md
+  - Devcontainers: stack/devcontainers.md
 - Rants:
   - Overview: rants/index.md
