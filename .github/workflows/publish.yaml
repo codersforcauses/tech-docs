@@ -1,0 +1,35 @@
+# Workflow for deploying to github
+name: Publish docs via GitHub Pages
+on:
+  push:
+    branches:
+      - main
+      - mkdocs-experimental
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    name: Deploy docs
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          cache: "pip"
+          python-version: "3.13"
+
+      - name: Install dependencies
+        run: pip install -r ./requirements.txt
+
+      - run: mkdocs build
+        env:
+          ENABLE_PDF_EXPORT: 1
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./site
