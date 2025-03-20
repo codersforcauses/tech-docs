@@ -1,1 +1,1 @@
-# How to Choose a New Tech Stack
+# Picking a New Stack

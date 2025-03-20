@@ -1,0 +1,6 @@
+{
+  "workbench.editor.customLabels.patterns": {
+    "**/docs/**/index.md": "${dirname} - Overview",
+    "**/docs/**/*.md": "${dirname} - ${filename}"
+  }
+}

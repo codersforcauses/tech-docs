@@ -28,7 +28,7 @@ The structure of this repo is as follows:
 └── requirements.txt
 ```
 
-## Installation
+## Development
 
 ### Ye olde way
 
@@ -44,6 +44,10 @@ mkdocs serve
 ```bash
 docker compose up
 ```
+
+### ✨Devcontainer ✨
+
+Install the devcontainer extension in VSCode and reopen the project a devcontainer.
 
 ## Commands
 

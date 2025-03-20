@@ -126,6 +126,7 @@ nav:
 - Tech Stack:
   - Overview: stack/index.md
   - Picking a New Stack: stack/new-stack.md
+  - Docker: stack/docker.md
   - Devcontainers: stack/devcontainers.md
 - Rants:
   - Overview: rants/index.md
