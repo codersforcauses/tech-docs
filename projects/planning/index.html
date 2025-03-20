@@ -77,6 +77,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#planning-a-project" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -537,6 +542,20 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Planning a Project
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -548,6 +567,43 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#first-client-meeting" class="md-nav__link">
+    <span class="md-ellipsis">
+      First Client Meeting
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#architecting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Architecting
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -807,6 +863,28 @@
   
   
     <li class="md-nav__item">
+      <a href="../../stack/docker/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Docker
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../stack/devcontainers/" class="md-nav__link">
         
   
@@ -916,9 +994,39 @@
   
 
 
-  <h1>Planning a Project</h1>
-
-
+<h1 id="planning-a-project">Planning a Project<a class="headerlink" href="#planning-a-project" title="Permanent link">&para;</a></h1>
+<p>So you've decided on a project and you've nominated yourself to be the tech lead. You might've sat in on the original client meeting, or you might not have. Fact remains you should plan a follow-up meeting <strong>as soon as possible</strong>. The earlier you start, the better and the more planning you do the better.</p>
+<h2 id="first-client-meeting">First Client Meeting<a class="headerlink" href="#first-client-meeting" title="Permanent link">&para;</a></h2>
+<p>Continuing on from the <a href="../clients/">previous page</a>, you now need to think on a deeper level. The <a href="https://www.notion.so/codersforcauses/Project-Requirements-Elicitation-Doc-1c7bddb3a4294e979ef8af1e14ce208f">Notion Page</a> written by @junhyap already gives a great high level overview, so here are some questions to ask and some words of advice:</p>
+<ul>
+<li>Write <strong>everything out</strong>. Make sure both you and the client are on the same page. In the same respect, repeat back to the client your interpretation of what they said. Ensure no misunderstandings -- you don't have time for that.</li>
+<li>What are your assumptions? What are <em>their</em> assumptions?</li>
+<li>What do they want? What is essential? What is not-so-essential? <strong>Prioritise them</strong>. Use those cringe agile models -- they work <img alt="😔" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f614.svg" title=":pensive:" />.</li>
+<li><a href="https://publicagile.org/agile-playbook/agile-planning/100-dollar-test/">https://publicagile.org/agile-playbook/agile-planning/100-dollar-test/</a></li>
+<li><a href="https://www.atlassian.com/agile/product-management/requirements">https://www.atlassian.com/agile/product-management/requirements</a></li>
+<li>Scope. Keep things simple. You have to consider the experience of the volunteers. You will suck at this the first time you're doing it.</li>
+<li>Who are the users of the app?</li>
+<li>If there are multiple types consider their user journey. e.g. Is there an admin and regular user? Do you need to consider permissions?</li>
+<li>Will there both mobile and desktop users?</li>
+<li>Also make user stories if you need to -- they're particularly useful for onboarding volunteers.</li>
+<li>What is the final product? Is it a website? Is it a PWA? PWAs are a good alternative to mobile apps because they're more accessible for developers and we can dodge the $99 fee Apple has to put an app on the App Store.</li>
+<li>What should it look like? Ask if they have particular branding, or a specific style. This is also where you need to consider the users of the app. Are they children or the elderly?</li>
+<li>What's their budget? This affects your deployment options.</li>
+<li>What about after handover? Do they have a tech team to continue maintaining it? Would they be happy to hire some of the volunteers after to continue working on it?</li>
+</ul>
+<p>Finally and most importantly, <strong><em>BE DECISIVE</em></strong>. Clients will often throw around ideas or come to you with a vague notion of what they want. It's your job as a tech lead (and the project manager's) to turn it into something concrete. If they can't decide, decide for them. Give a recommendation, explain your reasoning and have <strong><em>CONVICTION</em></strong>. If you make the wrong decision, say it and see what you can do to recalibrate.</p>
+<h2 id="architecting">Architecting<a class="headerlink" href="#architecting" title="Permanent link">&para;</a></h2>
+<h3 id="erd">ERD<a class="headerlink" href="#erd" title="Permanent link">&para;</a></h3>
+<p>Easiest one to knock out after getting your requirements is making an <a href="https://www.lucidchart.com/pages/er-diagrams">ERD</a>. It gets you thinking about the data flow, and it can readily be turned into a database schema. The simpler you can make it (or negotiate it), the easier time volunteers will have. Be aware of the nice-to-haves from your requirements doc, but try to keep them out at this stage. Focus on the bare functionality you need to have a functional app -- you can can always refine it later.</p>
+<h3 id="userapi-flows">User/API Flows<a class="headerlink" href="#userapi-flows" title="Permanent link">&para;</a></h3>
+<p>Consider creating a sequence diagram with mermaid or some other tool if a certain part of the app is complex. An ideal project will be simple enough that the Figma design will cover it, but if you have the time, feel free to do so.</p>
+<h3 id="tech-stack">Tech Stack<a class="headerlink" href="#tech-stack" title="Permanent link">&para;</a></h3>
+<p>Pick a tech stack! I strongly recommend using one that is already in the GitHub repo templates. For more information about choosing your own, see <a href="../../stack/new-stack/">Picking a New Stack</a>.</p>
+<h3 id="repo-setup">Repo Setup<a class="headerlink" href="#repo-setup" title="Permanent link">&para;</a></h3>
+<p>This should be straightforward unless you're setting one up from scratch, as everything is done for you. Just make sure to create a GitHub team under the <code>codersforcauses</code> org and invite all the volunteers. Then configure the repo to give write access to them. You also want to make sure merging to main without approval and a passing CI is blocked and pushing directly to main is blocked.</p>
+<p>Start adding some GitHub issues to the repo. Look at past projects for inspiration. Usually it goes design, navbar, DB schema, homepage, authentication, sign-up, etc...</p>
+<h3 id="figma">Figma<a class="headerlink" href="#figma" title="Permanent link">&para;</a></h3>
+<p>If you've done everything so far you're already doing quite well. You don't have to get fully into the design, but make sure you have an idea of the colour palette you'll be using and a rough vibe of what it'll look like. Most of this work can be left to the volunteers, but if you're pressed for time (like during Winter projects) you can do it yourselves. A pre-done Figma design is probably the most helpful for getting volunteers to start coding.</p>
 
 
 
