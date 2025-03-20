@@ -123,9 +123,9 @@ nav:
     - Overview: workshops/index.md
     - Existing Workshops: workshops/existing-workshops.md
     - New Workshops: workshops/new-workshops.md
-  - Stack:
+  - Tech Stack:
     - Overview: stack/index.md
-    - New Stack: stack/new-stack.md
+    - Picking a New Stack: stack/new-stack.md
     - Devcontainers: stack/devcontainers.md
 - Rants:
   - Overview: rants/index.md
