@@ -1,0 +1,3 @@
+# Rants
+
+Keep it tame.
